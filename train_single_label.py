@@ -25,6 +25,6 @@ options = {
 }
 
 for feature in training_features:
-    _ = os.system(f'python train.py --image_dir {options["image_dir"]} --annotation_dir {options["annotation_dir"]} --output_dir {options["output_dir"]} --split_path {options["splits_path"]} --epochs {epochs} --training_features {feature} --learning_rate {learning_rate} --optimizer {optimizer} --model {model} --pretrained 1 --freeze 0 --num_folds 2 --folds {train_folds} --batch_size {batch_size} --height {image_size} --width {image_size} --dual_output') 
+    _ = os.system(f'python train.py --image_dir {options["image_dir"]} --annotation_dir {options["annotation_dir"]} --output_dir {options["output_dir"]} --split_path {options["splits_path"]} --epochs {epochs} --training_features {feature} --learning_rate {learning_rate} --optimizer {optimizer} --model {model} --pretrained 1 --freeze 0 --num_folds 2 --folds {train_folds} --batch_size {batch_size} --height {image_size} --width {image_size} --weighted_loss 1') 
 
 # The --dual_output option uses two model outputs for a binary classification (one class per logit), while without this option only one output is thresholded by 0.5
