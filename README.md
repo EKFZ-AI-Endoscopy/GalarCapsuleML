@@ -1,11 +1,10 @@
 # Machine Learning for the Galar Capsule Dataset Paper
 
-
 Implementation for the reproduction of the experiments of the paper
 
 **Galar - a large multi-label video capsule endoscopy dataset**
 
-Download: TODO
+Download: [Figshare Dataset Link](https://plus.figshare.com/articles/dataset/Galar_-_a_large_multi-label_video_capsule_endoscopy_dataset/25304616/1) 
 
 
 ## Preparation
